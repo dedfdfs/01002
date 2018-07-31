@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3A692B7-3E50-4FAE-A616-242CAF34A33A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL.TDS.EIS.HPCRM.Logic</RootNamespace>
+    <AssemblyName>QL.TDS.EIS.HPCRM.Logic</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QL.TDS.Common">
+      <HintPath>..\..\Library\QL.TDS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QL.TDS.DataAccess">
+      <HintPath>..\..\Library\QL.TDS.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\CooperationTypeDAL.cs" />
+    <Compile Include="DAL\HPCRM_ProductDAL.cs" />
+    <Compile Include="DAL\HPCRM_Product_AttachsDAL.cs" />
+    <Compile Include="DAL\HPCRM_Sale_HistoryDataDAL.cs" />
+    <Compile Include="DAL\HPCRM_Sale_SaleForecastDAL.cs" />
+    <Compile Include="DAL\HP_Channel_GSZDDAL.cs" />
+    <Compile Include="DAL\HP_CRM_CusAllocationLogDAL.cs" />
+    <Compile Include="DAL\HP_CRM_CustomerDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_ContactDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_Contact_EditDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_EditDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_GetLogDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_SpotRecordDAL.cs" />
+    <Compile Include="DAL\HP_CRM_Customer_TakeDAL.cs" />
+    <Compile Include="DAL\HP_CRM_OperateRecordDAL.cs" />
+    <Compile Include="DAL\HP_CRM_OpportunityDAL.cs" />
+    <Compile Include="DAL\S20141230111536DAL.cs" />
+    <Compile Include="DAL\TDSys_AreaDAL.cs" />
+    <Compile Include="DAL\TDSys_CodeDAL.cs" />
+    <Compile Include="DAL\TDSys_CodeDetailDAL.cs" />
+    <Compile Include="DAL\TDSys_IndustryDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_CustomerDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_Customer_ContactDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_Customer_Contact_EditDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_Customer_EditDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_Customer_GetLogDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_OperateRecordDAL.cs" />
+    <Compile Include="DAL\VHP_CRM_OpportunityDAL.cs" />
+    <Compile Include="Entity\CooperationType.cs" />
+    <Compile Include="Entity\HPCRM_Product.cs" />
+    <Compile Include="Entity\HPCRM_Product_Attachs.cs" />
+    <Compile Include="Entity\HPCRM_Sale_HistoryData.cs" />
+    <Compile Include="Entity\HPCRM_Sale_SaleForecast.cs" />
+    <Compile Include="Entity\HP_Channel_GSZD.cs" />
+    <Compile Include="Entity\HP_CRM_CusAllocationLog.cs" />
+    <Compile Include="Entity\HP_CRM_CusNoDealDate.cs" />
+    <Compile Include="Entity\HP_CRM_CusOutFlowDate.cs" />
+    <Compile Include="Entity\HP_CRM_Customer.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_Allocation.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_Contact.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_Contact_Edit.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_Edit.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_GetLog.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_SpotRecord.cs" />
+    <Compile Include="Entity\HP_CRM_Customer_Take.cs" />
+    <Compile Include="Entity\HP_CRM_OperateRecord.cs" />
+    <Compile Include="Entity\HP_CRM_Opportunity.cs" />
+    <Compile Include="DAL\HP_WorkingplanDAL.cs" />
+    <Compile Include="DAL\HP_WorkingplanEntryDAL.cs" />
+    <Compile Include="Entity\HP_Workingplan.cs" />
+    <Compile Include="Entity\HP_WorkingplanEntry.cs" />
+    <Compile Include="Entity\S20141230111536.cs" />
+    <Compile Include="Entity\TDSys_Area.cs" />
+    <Compile Include="Entity\TDSys_Code.cs" />
+    <Compile Include="Entity\TDSys_CodeDetail.cs" />
+    <Compile Include="Entity\TDSys_Industry.cs" />
+    <Compile Include="Entity\VHPCRM_Product.cs" />
+    <Compile Include="Entity\VHPCRM_Sale_HistoryData.cs" />
+    <Compile Include="Entity\VHPCRM_Sale_SaleForecast.cs" />
+    <Compile Include="Entity\VHP_CRM_Customer.cs" />
+    <Compile Include="Entity\VHP_CRM_Customer_Contact.cs" />
+    <Compile Include="Entity\VHP_CRM_Customer_Contact_Edit.cs" />
+    <Compile Include="Entity\VHP_CRM_Customer_Edit.cs" />
+    <Compile Include="Entity\VHP_CRM_Customer_GetLog.cs" />
+    <Compile Include="Entity\VHP_CRM_OperateRecord.cs" />
+    <Compile Include="Entity\VHP_CRM_Opportunity.cs" />
+    <Compile Include="Entity\VTDSys_Code.cs" />
+    <Compile Include="Entity\VTDSys_CodeDetail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\QL.TDS.Common.dll" />
+    <Content Include="bin\Debug\QL.TDS.DataAccess.dll" />
+    <Content Include="bin\Debug\QL.TDS.EIS.HPCRM.Logic.dll" />
+    <Content Include="bin\Debug\QL.TDS.EIS.HPCRM.Logic.pdb" />
+    <Content Include="bin\Debug\QL.TDS.EIS.HPCRM.Logic.vshost.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\QL.TDS.EIS.HPCRM.Logic.vshost.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+copy "$(TargetDir)$(TargetName).dll" E:\IIS\IIS_HP\bin\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
