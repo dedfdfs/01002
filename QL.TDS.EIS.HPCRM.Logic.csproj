@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\CooperationTypeDAL.cs" />
+    <Compile Include="DAL\CooperationTypeDAL.cs" />555
     <Compile Include="DAL\HPCRM_ProductDAL.cs" />
     <Compile Include="DAL\HPCRM_Product_AttachsDAL.cs" />
     <Compile Include="DAL\HPCRM_Sale_HistoryDataDAL.cs" />
